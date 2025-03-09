@@ -1,6 +1,14 @@
 # BookshopStore
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.0.
+This project is a book management system developed in Angular 19, designed to manage a library's catalog. It includes basic features such as:
+
+- Book listing: Displays all available books with details like title, author, status (available or rented), etc.
+
+- Book details: Allows users to view detailed information about each book.
+
+- Add new books: Form to add new books to the catalog.
+
+- Status management: Indicates whether a book is available or rented.
 
 ## Development server
 
