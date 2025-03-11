@@ -1,5 +1,5 @@
 <div>
-  <ul class="book-grid">
+  <ul id="books" class="book-grid">
     @for (book of books; track book.id) {
     <li class="book-card">
       <img
@@ -7,11 +7,13 @@
         [src]="getCoverBook(book.cover)"
         alt="book.title"
       />
-      <h2>{{ book.title }}</h2>
-      <span> {{ book.author }}</span>
-      <span> {{ book.genre }}</span>
-      <span> {{ book.publicationYear }}</span>
-      <span> {{ book.status }}</span>
+      <section class="book-info">
+        <span class="book-title">{{ book.title }}</span>
+        <span class="book-author"> {{ book.author }}</span>
+        <span class="book-genre"> {{ book.genre }}</span>
+        <span class="book-year"> {{ book.publicationYear }}</span>
+        <span class="book-status"> {{ book.status }}</span>
+      </section>
     </li>
     }
   </ul>

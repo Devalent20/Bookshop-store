@@ -7,13 +7,13 @@
 
 /* Libro de la lista */
 .book-card {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 100px 1fr; /* Divide los elementos del libro en 2 columnas*/
   border: 1px solid #ccc;
   border-radius: 8px;
+  gap: 16px;
   padding: 16px;
   background-color: #f8f2e0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Imagen */
@@ -23,13 +23,23 @@
   border-radius: 6px;
 }
 
-.book-card h2 {
-  margin: 0 0 8px;
-  font-size: 1.2em;
+.book-title,
+.book-author,
+.book-genre,
+.book-year,
+.book-status {
+  text-align: center;
+  font-size: 1.5em;
+  color: #555;
 }
 
-.book-card span {
-  display: block;
-  margin: 4px 0;
-  color: #555;
+.book-title {
+  font-weight: bold;
+}
+
+.book-info {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+  align-items: center;
 }
