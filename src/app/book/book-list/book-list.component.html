@@ -1,1 +1,18 @@
-<p>book-list works!</p>
+<div>
+  <ul class="book-grid">
+    @for (book of books; track book.id) {
+    <li class="book-card">
+      <img
+        class="book-cover"
+        [src]="getCoverBook(book.cover)"
+        alt="book.title"
+      />
+      <h2>{{ book.title }}</h2>
+      <span> {{ book.author }}</span>
+      <span> {{ book.genre }}</span>
+      <span> {{ book.publicationYear }}</span>
+      <span> {{ book.status }}</span>
+    </li>
+    }
+  </ul>
+</div>
