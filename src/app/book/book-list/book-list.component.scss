@@ -1,19 +1,23 @@
 /* Grid */
 .book-grid {
   display: grid;
-  gap: 5px; /* Espacio entre elementos */
+  gap: 5px;
   padding: 16px;
 }
 
 /* Libro de la lista */
 .book-card {
   display: grid;
-  grid-template-columns: 100px 1fr; /* Divide los elementos del libro en 2 columnas*/
+  grid-template-columns: 100px 1fr; /* Divide los elementos del libro en 2 columnas (Imagen y detalles) */
   border: 1px solid #ccc;
   border-radius: 8px;
   gap: 16px;
   padding: 16px;
   background-color: #f8f2e0;
+}
+
+.book-card:hover {
+  background-color: #f8f8f8;
 }
 
 /* Imagen */
