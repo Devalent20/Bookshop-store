@@ -1,1 +1,10 @@
-<p>book-item works!</p>
+<article class="book-card">
+  <img class="book-cover" [src]="getCoverBook(book.cover)" alt="book.title" />
+  <section class="book-info">
+    <span class="book-title">{{ book.title }}</span>
+    <span class="book-author"> {{ book.author }}</span>
+    <span class="book-genre"> {{ book.genre }}</span>
+    <span class="book-year"> {{ book.publicationYear }}</span>
+    <span class="book-status"> {{ book.status }}</span>
+  </section>
+</article>
