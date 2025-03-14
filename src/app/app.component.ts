@@ -6,6 +6,7 @@ import { BookListComponent } from './book/book-list/book-list.component';
   imports: [BookListComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
+  standalone: true,
 })
 export class AppComponent {
   title = 'bookshop-store';

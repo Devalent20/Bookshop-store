@@ -1,5 +1,7 @@
+import { Injectable } from '@angular/core';
 import { Book } from './book.model';
 
+@Injectable({ providedIn: 'root' })
 export class BookService {
   books: Book[] = [
     {
@@ -60,5 +62,9 @@ export class BookService {
 
   getList(): Book[] {
     return this.books;
+  }
+
+  getCoverBook(coverURL: string) {
+    return '/assets/books/' + coverURL;
   }
 }
