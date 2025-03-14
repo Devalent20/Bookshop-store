@@ -5,5 +5,11 @@ export type Book = {
   genre: string;
   cover: string;
   publicationYear: number;
-  status: string;
+  status: BookStatus;
 };
+
+export enum BookStatus {
+  READ = 'Read',
+  UNREAD = 'Unread',
+  READING = 'Reading',
+}

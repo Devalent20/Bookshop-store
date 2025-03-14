@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Book } from './book.model';
+import { Book, BookStatus } from './book.model';
 
 @Injectable({ providedIn: 'root' })
 export class BookService {
@@ -11,7 +11,7 @@ export class BookService {
       genre: 'Fiction',
       cover: 'cover1.jpg',
       publicationYear: 2001,
-      status: 'Read',
+      status: BookStatus.READ,
     },
     {
       id: 2,
@@ -20,7 +20,7 @@ export class BookService {
       genre: 'Non-Fiction',
       cover: 'cover1.jpg',
       publicationYear: 2002,
-      status: 'Unread',
+      status: BookStatus.UNREAD,
     },
     {
       id: 3,
@@ -29,7 +29,7 @@ export class BookService {
       genre: 'Fantasy',
       cover: 'cover1.jpg',
       publicationYear: 2003,
-      status: 'Read',
+      status: BookStatus.READING,
     },
     {
       id: 4,
@@ -38,7 +38,7 @@ export class BookService {
       genre: 'Comedy',
       cover: 'cover1.jpg',
       publicationYear: 2004,
-      status: 'Unread',
+      status: BookStatus.READ,
     },
     {
       id: 5,
@@ -47,7 +47,7 @@ export class BookService {
       genre: 'Slice of Life',
       cover: 'cover1.jpg',
       publicationYear: 2005,
-      status: 'Read',
+      status: BookStatus.READING,
     },
     {
       id: 6,
@@ -56,7 +56,7 @@ export class BookService {
       genre: 'Drama',
       cover: 'cover1.jpg',
       publicationYear: 2006,
-      status: 'Unread',
+      status: BookStatus.UNREAD,
     },
   ];
 

@@ -1,49 +1,5 @@
-/* Grid */
 .book-grid {
   display: grid;
   gap: 5px;
   padding: 16px;
-}
-
-/* Libro de la lista */
-.book-card {
-  display: grid;
-  grid-template-columns: 100px 1fr; /* Divide los elementos del libro en 2 columnas (Imagen y detalles) */
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  gap: 16px;
-  padding: 16px;
-  background-color: #f8f2e0;
-}
-
-.book-card:hover {
-  background-color: #f8f8f8;
-}
-
-/* Imagen */
-.book-cover {
-  width: 10vh;
-  height: auto;
-  border-radius: 6px;
-}
-
-.book-title,
-.book-author,
-.book-genre,
-.book-year,
-.book-status {
-  text-align: center;
-  font-size: 1.5em;
-  color: #555;
-}
-
-.book-title {
-  font-weight: bold;
-}
-
-.book-info {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 8px;
-  align-items: center;
 }
